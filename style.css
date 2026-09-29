@@ -45,3 +45,44 @@
     font-size: 9px;
   }
 }
+
+/* MOBILE PERFORMANCE PASS — keeps the interactions, removes expensive paint work */
+@media (max-width: 680px){
+  html{scroll-behavior:smooth}
+  .noise,.grid{display:none}
+  .blob{filter:none;opacity:.045;transform:none!important}
+  .header{backdrop-filter:none;-webkit-backdrop-filter:none;background:rgba(7,8,12,.94)}
+  .nav{backdrop-filter:none;-webkit-backdrop-filter:none;background:rgba(7,8,12,.98)}
+  .hero-stage{height:455px;perspective:none;overflow:hidden}
+  .photo-wrap{width:min(300px,78vw);transition:transform .2s ease-out}
+  .photo-inner{box-shadow:0 18px 45px rgba(0,0,0,.42);border-radius:26px}
+  .photo-shadow{filter:blur(22px);opacity:.38}
+  .photo-glow{filter:blur(22px)!important;opacity:.32!important}
+  .scan{animation-duration:7s!important;opacity:.18!important}
+  .ring-one,.ring-two,.ring-three{animation:none!important;opacity:.18!important}
+  .ring-one{width:340px;height:340px}
+  .ring-two{width:380px;height:210px}
+  .ring-three{width:300px;height:300px}
+  .ticker-track{animation-duration:36s!important}
+  .section{content-visibility:auto;contain-intrinsic-size:700px}
+  .skill-card,.project,.hobby{will-change:auto}
+  .skill-card{transition:box-shadow .25s ease,background .25s ease}
+  .skill-card:hover{transform:none!important}
+  .project-bg{transition:none}
+  .project:hover .project-bg{transform:none}
+  .hobby:hover{padding-left:5px;padding-right:5px}
+  .magnetic{transform:none!important}
+}
+
+@media (max-width:420px){
+  .section{width:calc(100% - 24px);padding:82px 0}
+  .hero{padding-top:112px}
+  .hero h1{font-size:clamp(49px,15.5vw,68px);letter-spacing:-3.5px}
+  .hero-desc{font-size:12px;line-height:1.7}
+  .hero-stage{height:415px}
+  .photo-wrap{width:min(275px,76vw)}
+  .ring-one{width:310px;height:310px}
+  .ring-two{width:345px;height:190px}
+  .ring-three{width:275px;height:275px}
+  .contact-box{padding:24px 18px}
+}
