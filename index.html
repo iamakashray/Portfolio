@@ -1,117 +1,121 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="description" content="Akash Ray — Class XI student, tech enthusiast, web developer, photo and video editor, photographer and DIY maker." />
-  <meta name="keywords" content="Akash Ray, portfolio, web development, photo editing, video editing, photography, cinematography, DIY projects" />
-  <meta name="author" content="Akash Ray" />
-  <meta name="theme-color" content="#08090c" />
-  <title>Akash Ray — Creative Tech Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Akash Ray — Class XI PCM student, tech enthusiast, web developer and visual creator.">
+<meta name="theme-color" content="#07080c">
+<title>Akash Ray — Tech & Creative Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="cursor-dot"></div><div class="cursor-ring"></div>
-  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div><div class="grid-overlay"></div>
+<div class="loader" id="loader"><div class="loader-mark">AK<span>.</span></div><div class="loader-line"><i></i></div><small>INITIALIZING PORTFOLIO</small></div>
+<div class="cursor-dot"></div><div class="cursor-ring"></div>
+<div class="noise"></div><div class="grid"></div><div class="blob blob-a"></div><div class="blob blob-b"></div>
 
-  <header class="site-header" id="siteHeader">
-    <a class="brand magnetic" href="#home" aria-label="Akash Ray home">AK<span>.</span></a>
-    <nav class="nav" aria-label="Primary navigation">
-      <a class="nav-link active" href="#home">Home</a>
-      <a class="nav-link" href="#about">About</a>
-      <a class="nav-link" href="#skills">Skills</a>
-      <a class="nav-link" href="#work">Work</a>
-      <a class="nav-link" href="#contact">Contact</a>
-    </nav>
-    <div class="header-actions">
-      <a class="header-cta magnetic" href="#contact">Let's talk <span>↗</span></a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
-    </div>
-  </header>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#work">Work</a><a href="#contact">Contact</a>
+<header class="header" id="header">
+  <a class="logo magnetic" href="#home">AK<span>.</span></a>
+  <nav class="nav" id="nav">
+    <a class="nav-link active" href="#home">Home</a><a class="nav-link" href="#about">About</a><a class="nav-link" href="#skills">Skills</a><a class="nav-link" href="#work">Work</a><a class="nav-link" href="#contact">Contact</a>
+  </nav>
+  <a class="top-cta magnetic" href="#contact">Let's talk <b>↗</b></a>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu"><span></span><span></span></button>
+</header>
+
+<main>
+<section class="hero section" id="home">
+  <div class="hero-copy reveal">
+    <div class="status"><span></span> STUDENT / CREATOR / TECH ENTHUSIAST</div>
+    <p class="hero-mini">HELLO, I'M</p>
+    <h1><span class="line-mask"><span>Akash Ray<span class="lime">.</span></span></span><span class="line-mask"><span class="outline">I BUILD</span></span><span class="line-mask"><span>WITH <em>TECH.</em></span></span></h1>
+    <p class="hero-desc">Class XI PCM student exploring code, visual storytelling and electronics — turning curiosity into things people can actually see and use.</p>
+    <div class="hero-buttons"><a class="btn primary magnetic" href="#work">Explore my work <span>↗</span></a><a class="btn secondary magnetic" href="#about">Who I am <span>↓</span></a></div>
+    <div class="scroll-note"><span class="scroll-line"></span> SCROLL TO EXPLORE</div>
   </div>
 
-  <main>
-    <section id="home" class="hero section reveal">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="pulse-dot"></span> Student • Creator • Tech Enthusiast</p>
-        <h1>I'm <span>Akash.</span><br />I build things<br /><em>with technology.</em></h1>
-        <p class="hero-text">Class XI student with a PCM background, deeply interested in technology, visual creativity and turning ideas into real projects.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary magnetic" href="#work">Explore my work <span>↗</span></a>
-          <a class="btn btn-ghost magnetic" href="#about">More about me</a>
-        </div>
-        <div class="mini-stats">
-          <div><strong>04+</strong><span>Core skills</span></div><div><strong>05</strong><span>Creative hobbies</span></div><div><strong>01</strong><span>Curiosity level</span></div>
-        </div>
+  <div class="hero-stage reveal reveal-delay">
+    <div class="stage-number">01 / 05</div>
+    <div class="ring ring-one"></div><div class="ring ring-two"></div><div class="ring ring-three"></div>
+    <div class="photo-wrap" id="photoWrap">
+      <div class="photo-shadow"></div><div class="photo-glow"></div>
+      <div class="photo-inner" id="photoInner"><img src="profile.png" alt="Akash Ray"></div>
+      <div class="scan"></div><div class="photo-label">AKASH RAY <span>✦</span></div>
+    </div>
+    <div class="float-chip chip-one"><i>⌘</i><span>WEB<br><b>DEVELOPMENT</b></span></div>
+    <div class="float-chip chip-two"><i>◈</i><span>VISUAL<br><b>CREATOR</b></span></div>
+    <div class="float-chip chip-three"><i>⚡</i><span>DIY<br><b>PROJECTS</b></span></div>
+  </div>
+</section>
+
+<div class="ticker"><div class="ticker-track"><span>CODE</span><i>✦</i><span>CREATE</span><i>✦</i><span>EDIT</span><i>✦</i><span>BUILD</span><i>✦</i><span>CAPTURE</span><i>✦</i><span>CODE</span><i>✦</i><span>CREATE</span><i>✦</i><span>EDIT</span><i>✦</i><span>BUILD</span><i>✦</i><span>CAPTURE</span><i>✦</i></div></div>
+
+<section class="section about" id="about">
+  <div class="section-head reveal"><span class="index">01</span><p>ABOUT ME</p><div class="head-line"></div></div>
+  <div class="about-grid">
+    <div class="reveal"><h2>I don't just <span>use</span> technology.<br>I like to <span>build</span> with it.</h2></div>
+    <div class="about-copy reveal reveal-delay"><p>I'm <strong>Akash Ray</strong>, a Class XI student with PCM. Technology is the field that keeps pulling my curiosity back — whether it's a website, an edit, a camera or an electronics board.</p><p>I learn by experimenting, breaking things, fixing them and then making the next version better.</p><div class="fact-row"><div><b>XI</b><small>CLASS</small></div><div><b>PCM</b><small>STREAM</small></div><div><b>∞</b><small>CURIOSITY</small></div></div></div>
+  </div>
+</section>
+
+<section class="section" id="skills">
+  <div class="section-head reveal"><span class="index">02</span><p>SKILLS</p><div class="head-line"></div></div>
+  <div class="section-title reveal"><h2>Things I <span>make.</span></h2><p>My core skills sit between technology and visual creativity.</p></div>
+  <div class="skill-grid">
+    <article class="skill-card tilt reveal"><div class="card-top"><span>01</span><i>⌘</i></div><h3>Web<br><em>Development</em></h3><p>Responsive interfaces, interactive pages and clean front-end experiences.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><b class="card-arrow">↗</b></article>
+    <article class="skill-card tilt reveal reveal-delay-1"><div class="card-top"><span>02</span><i>◈</i></div><h3>Photo<br><em>Editing</em></h3><p>Color, composition and visual treatment for polished creative content.</p><div class="tags"><span>Photoshop</span><span>Lightroom</span></div><b class="card-arrow">↗</b></article>
+    <article class="skill-card tilt reveal reveal-delay-2"><div class="card-top"><span>03</span><i>▶</i></div><h3>Video<br><em>Editing</em></h3><p>Short-form edits, pacing, transitions, sound and cinematic storytelling.</p><div class="tags"><span>CapCut</span><span>DaVinci</span></div><b class="card-arrow">↗</b></article>
+    <article class="skill-card tilt reveal reveal-delay-3"><div class="card-top"><span>04</span><i>⚡</i></div><h3>Creative<br><em>Tech</em></h3><p>DIY electronics and experiments where code meets hardware.</p><div class="tags"><span>ESP32</span><span>DIY</span><span>Prototyping</span></div><b class="card-arrow">↗</b></article>
+  </div>
+</section>
+
+<section class="section hobbies" id="hobbies">
+  <div class="section-head reveal"><span class="index">03</span><p>HOBBIES</p><div class="head-line"></div></div>
+  <div class="hobby-intro reveal"><h2>Off screen,<br>I <span>create.</span></h2><p>When I'm not studying, I usually end up coding, editing, shooting or building something.</p></div>
+  <div class="hobby-list">
+    <div class="hobby reveal"><span>01</span><strong>Coding</strong><b>⌘</b></div><div class="hobby reveal"><span>02</span><strong>Editing</strong><b>◈</b></div><div class="hobby reveal"><span>03</span><strong>Photography</strong><b>◎</b></div><div class="hobby reveal"><span>04</span><strong>Cinematography</strong><b>▶</b></div><div class="hobby reveal"><span>05</span><strong>DIY Projects</strong><b>⚡</b></div>
+  </div>
+</section>
+
+<section class="section work" id="work">
+  <div class="section-head reveal"><span class="index">04</span><p>SELECTED WORK</p><div class="head-line"></div></div>
+  <div class="section-title reveal"><h2>Ideas, turned <span>real.</span></h2><p>Replace these placeholders with your actual projects, links and screenshots.</p></div>
+  <div class="project-grid">
+    <article class="project p1 reveal"><div class="project-bg"></div><div class="project-info"><small>01 / WEB</small><h3>Interactive<br>Websites</h3><p>Modern pages with motion, responsive UI and JavaScript interactions.</p><a href="#contact">Project details ↗</a></div></article>
+    <article class="project p2 reveal reveal-delay-1"><div class="project-bg"></div><div class="project-info"><small>02 / EDITING</small><h3>Visual<br>Stories</h3><p>Photo and video experiments built around mood and storytelling.</p><a href="#contact">Project details ↗</a></div></article>
+    <article class="project p3 reveal reveal-delay-2"><div class="project-bg"></div><div class="project-info"><small>03 / DIY TECH</small><h3>Hardware<br>Experiments</h3><p>Small electronics builds combining code, hardware and ideas.</p><a href="#contact">Project details ↗</a></div></article>
+  </div>
+</section>
+
+<section class="section contact" id="contact">
+  <div class="contact-box reveal">
+    <div class="contact-big">
+      <span>05 / CONTACT</span>
+      <h2>Let's make<br><em>something.</em></h2>
+    </div>
+    <div class="contact-right">
+      <p>Want to connect, collaborate or just explore what I create? Tap a platform below.</p>
+      <div class="contact-links">
+        <a href="https://www.instagram.com/iam_akashray_?stkn=MWY5Zjl3MXVsY2NoMw==" target="_blank" rel="noopener noreferrer" class="magnetic social-link">
+          <span><small>INSTAGRAM</small>Instagram</span><b>Tap here ↗</b>
+        </a>
+        <a href="https://x.com/iam_akashray_" target="_blank" rel="noopener noreferrer" class="magnetic social-link">
+          <span><small>X / TWITTER</small>@iam_akashray_</span><b>Tap here ↗</b>
+        </a>
+        <a href="https://www.linkedin.com/in/akash-ray-6320213aa?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="magnetic social-link">
+          <span><small>LINKEDIN</small>Akash Ray</span><b>Tap here ↗</b>
+        </a>
+        <a href="https://mail.google.com/mail/u/2/#inbox" target="_blank" rel="noopener noreferrer" class="magnetic social-link">
+          <span><small>E-Mail</small>Akash Ray</span><b>Tap here ↗</b>
+        </a>
       </div>
-
-      <div class="hero-visual" id="characterStage" aria-label="Interactive profile area">
-        <div class="character-world" id="characterWorld">
-          <div class="character-aura aura-one"></div><div class="character-aura aura-two"></div>
-          <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
-          <div class="character-particles" id="characterParticles"></div>
-          <div class="character-label label-one"><span>01</span> CODE</div>
-          <div class="character-label label-two"><span>02</span> CREATE</div>
-          <div class="photo-card" id="photoCard" role="button" tabindex="0" aria-label="Drag Akash's character around the interactive area">
-            <div class="photo-glow"></div>
-            <img id="heroPhoto" src="profile.png" alt="Akash Ray profile photo" draggable="false" />
-            <div class="photo-shine"></div>
-            <div class="photo-badge"><span></span> Tech • Creative • Curious</div>
-            <div class="drag-hint">↔ Drag me</div>
-          </div>
-          <div class="character-status"><span class="status-dot"></span><span id="statusText">Character online</span></div>
-          <button class="character-chip chip-top magnetic" type="button" data-message="Currently exploring: web + creative tech">⌘ <span>Tech + Creativity</span></button>
-          <button class="character-chip chip-bottom magnetic" type="button" data-message="Building, editing, experimenting — one project at a time">✦ <span>Builder mindset</span></button>
-        </div>
-        <div class="drag-instruction"><span>Touch & drag</span> the character</div>
-      </div>
-    </section>
-
-    <section id="about" class="section split-section reveal">
-      <div><p class="section-kicker">01 / ABOUT</p><h2>Curious mind.<br /><span>Builder's mindset.</span></h2></div>
-      <div class="about-copy">
-        <p>I’m Akash Ray, a Class XI student studying with PCM. I’m strongly interested in technology and enjoy learning by making things rather than only reading about them.</p>
-        <p>I work with websites, photo and video editing, photography, cinematography and DIY electronics projects. My goal is to keep combining code, creativity and practical problem solving.</p>
-        <div class="about-highlights"><div><span>01</span><strong>Learn</strong><small>by experimenting</small></div><div><span>02</span><strong>Create</strong><small>with technology</small></div><div><span>03</span><strong>Build</strong><small>real projects</small></div></div>
-      </div>
-    </section>
-
-    <section id="skills" class="section reveal">
-      <div class="section-heading"><div><p class="section-kicker">02 / SKILLS</p><h2>What I <span>work with.</span></h2></div><p>Tap or hover a skill to explore what I enjoy doing in that area.</p></div>
-      <div class="skill-grid">
-        <article class="skill-card tilt-card" data-skill="Web Development"><div class="skill-number">01</div><div class="skill-symbol">⌘</div><h3>Web Development</h3><p>Responsive, interactive websites with clean layouts, modern UI and practical front-end code.</p><div class="skill-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></article>
-        <article class="skill-card tilt-card" data-skill="Photo Editing"><div class="skill-number">02</div><div class="skill-symbol">◈</div><h3>Photo Editing</h3><p>Color correction, composition, retouching and visual styling for creative and social content.</p><div class="skill-tags"><span>Photoshop</span><span>Lightroom</span><span>Design</span></div></article>
-        <article class="skill-card tilt-card" data-skill="Video Editing"><div class="skill-number">03</div><div class="skill-symbol">▶</div><h3>Video Editing</h3><p>Short-form edits, pacing, transitions, sound, text and cinematic visual storytelling.</p><div class="skill-tags"><span>CapCut</span><span>DaVinci</span><span>Reels</span></div></article>
-        <article class="skill-card tilt-card" data-skill="Creative Tech"><div class="skill-number">04</div><div class="skill-symbol">✦</div><h3>Creative Tech</h3><p>Combining coding, electronics and visual ideas to turn concepts into interactive projects.</p><div class="skill-tags"><span>ESP32</span><span>DIY</span><span>Prototyping</span></div></article>
-      </div>
-    </section>
-
-    <section class="section reveal">
-      <div class="section-heading compact"><div><p class="section-kicker">03 / HOBBIES</p><h2>Things I do <span>for fun.</span></h2></div></div>
-      <div class="hobby-marquee"><div class="hobby-track"><span>Coding</span><i>✦</i><span>Editing</span><i>✦</i><span>Photography</span><i>✦</i><span>Cinematography</span><i>✦</i><span>DIY Projects</span><i>✦</i><span>Coding</span><i>✦</i><span>Editing</span><i>✦</i><span>Photography</span><i>✦</i><span>Cinematography</span><i>✦</i><span>DIY Projects</span><i>✦</i></div></div>
-    </section>
-
-    <section id="work" class="section reveal">
-      <div class="section-heading"><div><p class="section-kicker">04 / SELECTED WORK</p><h2>Projects that turn <span>ideas real.</span></h2></div><p>Replace these placeholders with your actual projects, screenshots and live links.</p></div>
-      <div class="project-grid">
-        <article class="project-card large project-interactive"><div class="project-bg bg-web"></div><div class="project-content"><span>01 / WEB</span><h3>Interactive Websites</h3><p>Landing pages, portfolio sites and small web experiences built with HTML, CSS and JavaScript.</p><a href="#contact">View project ↗</a></div></article>
-        <article class="project-card project-interactive"><div class="project-bg bg-edit"></div><div class="project-content"><span>02 / EDITING</span><h3>Visual Edits</h3><p>Photo and video experiments focused on mood, color and storytelling.</p><a href="#contact">View project ↗</a></div></article>
-        <article class="project-card project-interactive"><div class="project-bg bg-diy"></div><div class="project-content"><span>03 / DIY</span><h3>Tech Experiments</h3><p>Electronics and maker projects combining hardware, code and creative problem solving.</p><a href="#contact">View project ↗</a></div></article>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact-section reveal">
-      <div class="contact-panel"><div><p class="section-kicker">05 / CONTACT</p><h2>Have an idea?<br /><span>Let's build it.</span></h2></div><div class="contact-right"><p>For collaborations, creative work, websites or tech projects, reach me through the links below.</p><div class="contact-links"><a href="mailto:akashrayjirat11@gmail.com">Email <small>Tap here</small><span>↗</span></a><a href="https://www.instagram.com/iam_akashray_" target="_blank" rel="noopener noreferrer">Instagram <small>Tap here</small><span>↗</span></a><a href="https://www.linkedin.com/in/akash-ray-6320213aa" target="_blank" rel="noopener noreferrer">LinkedIn <small>Tap here</small><span>↗</span></a><a href="https://x.com/iam_akashray_" target="_blank" rel="noopener noreferrer">X / Twitter <small>Tap here</small><span>↗</span></a></div></div></div>
-    </section>
-  </main>
-  <footer class="footer"><span>© <span id="year"></span> Akash Ray</span><span>Built with curiosity & code.</span><a href="#home">Back to top ↑</a></footer>
-
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="script.js"></script>
+    </div>
+  </div>
+</section>
+</main>
+<footer><span>© <b id="year"></b> AKASH RAY</span><span>BUILT WITH CURIOSITY + CODE</span><a href="#home">BACK TO TOP ↑</a></footer>
+<script src="script.js"></script>
 </body>
 </html>
