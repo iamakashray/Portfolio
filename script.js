@@ -32,3 +32,14 @@ if(matchMedia('(pointer:fine)').matches){$$('.magnetic').forEach(el=>{el.addEven
 
 // Subtle parallax for the background blobs and stage rings.
 window.addEventListener('scroll',()=>{const y=scrollY;document.querySelector('.blob-a').style.transform=`translate3d(${y*.015}px,${y*.025}px,0)`;document.querySelector('.blob-b').style.transform=`translate3d(${-y*.012}px,${-y*.018}px,0)`},{passive:true});
+
+// Touch devices: keep mobile smooth by avoiding pointer/scroll-driven transforms.
+const isTouch = matchMedia('(hover: none), (pointer: coarse)').matches;
+if(isTouch){
+  const photoEl=$('#photoWrap');
+  photoEl?.removeAttribute('style');
+  // Disable the desktop-only background parallax scroll handler by keeping blobs static.
+  const ba=document.querySelector('.blob-a'), bb=document.querySelector('.blob-b');
+  if(ba) ba.style.transform='none';
+  if(bb) bb.style.transform='none';
+}
