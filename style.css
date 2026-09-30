@@ -2119,3 +2119,59 @@ footer{
     transform:none
   }
 }
+/* ===== MOBILE CANVA FIX ===== */
+@media (max-width: 640px) {
+
+  .photo-skill .orbit-stage {
+    overflow: visible;
+  }
+
+  .photo-skill .orbit-logo.logo-4 {
+    offset-path: none !important;
+    animation: canvaMobileFloat 3s ease-in-out infinite !important;
+
+    left: 50% !important;
+    top: calc(50% - var(--orbit-r)) !important;
+
+    margin: 0 !important;
+    transform: translate(-50%, -50%) !important;
+
+    width: 68px !important;
+    height: 68px !important;
+
+    z-index: 10 !important;
+  }
+
+  .photo-skill .orbit-logo.logo-4 img {
+    display: block !important;
+    width: 38px !important;
+    height: 38px !important;
+    object-fit: contain !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+}
+
+@keyframes canvaMobileFloat {
+  0%, 100% {
+    transform: translate(-50%, -50%) translateY(0);
+  }
+
+  50% {
+    transform: translate(-50%, -50%) translateY(-8px);
+  }
+}
+
+/* Smaller phones */
+@media (max-width: 420px) {
+
+  .photo-skill .orbit-logo.logo-4 {
+    width: 61px !important;
+    height: 61px !important;
+  }
+
+  .photo-skill .orbit-logo.logo-4 img {
+    width: 32px !important;
+    height: 32px !important;
+  }
+}
